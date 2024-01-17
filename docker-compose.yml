@@ -3,8 +3,8 @@ services:
   db:
     image: postgres
     volumes:
-      - ./create.sql:/docker-entrypoint-initdb.d/create.sql
-      - ./data/house_prices.csv:/house_prices.csv
+      - ./create.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./data.csv:/data.csv
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
