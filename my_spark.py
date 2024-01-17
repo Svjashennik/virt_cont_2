@@ -5,8 +5,8 @@ spark = SparkSession.builder.master('spark://spark-master:7077').appName("HouseP
 
 db_url = "jdbc:postgresql://db:5432/mydb"
 con_props = {
-    "user": "myuser",
-    "password": "mypassword",
+    "user": "postgres",
+    "password": "postgres",
     "driver": "org.postgresql.Driver"
 }
 
