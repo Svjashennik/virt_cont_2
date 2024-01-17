@@ -3,7 +3,7 @@ services:
   db:
     image: postgres
     volumes:
-      - ./create.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
       - ./data.csv:/data.csv
     environment:
       - POSTGRES_USER=postgres
